@@ -13,6 +13,10 @@ app.use(cors({
 }))
 app.use(cookieParser())
 app.use("/auth", proxy(process.env.AUTH_SERVICE))
+app.get("/api/me",protect,getCurrentUser)
+app.get("/",(req,res)=>{
+    res.json({message:"hello from gateway v5"})
+})
 
 app.listen(port, () => {
     console.log(`gateway started at ${port}`)
