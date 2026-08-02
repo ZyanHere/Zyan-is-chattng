@@ -16,6 +16,7 @@ app.use(cors({
 app.use(cookieParser())
 app.use("/auth", proxy(process.env.AUTH_SERVICE))
 app.use("/chat", proxyWithHeader(process.env.CHAT_SERVICE))
+app.use("/agent", proxyWithHeader(process.env.AGENT_SERVICE))
 app.get("/api/me",protect,getCurrentUser)
 app.get("/",(req,res)=>{
     res.json({message:"hello from gateway v5"})
