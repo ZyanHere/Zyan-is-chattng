@@ -8,9 +8,9 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: "cortextai-f288e.firebaseapp.com",
-  projectId: "cortextai-f288e",
-  storageBucket: "cortextai-f288e.firebasestorage.app",
+  authDomain: "Omnixtai-f288e.firebaseapp.com",
+  projectId: "Omnixtai-f288e",
+  storageBucket: "Omnixtai-f288e.firebasestorage.app",
   messagingSenderId: "939815307161",
   appId: "1:939815307161:web:e10430cd8336f06dbb7508",
   measurementId: "G-QKFP0HY8TM"

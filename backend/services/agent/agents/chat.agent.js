@@ -26,7 +26,7 @@ export const chatAgent = async (state) => {
 
 
     const systemPrompt = `
-            You are CortexAI, an intelligent AI assistant.
+            You are OmnixAI, an intelligent AI assistant.
 
         
             ${searchContext}
